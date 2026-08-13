@@ -18,7 +18,7 @@ VAR
     SlaveCount      : INT := 0;
 	
     // Unique data buffers and random parameters per slave pipeline
-    aDataBuffs      : ARRAY[1..4] OF ARRAY[0..3] OF BYTE;
+    aDataBuffs      : ARRAY[1..4] OF ARRAY[0..255] OF BYTE;
     aRandIndices    : ARRAY[1..4] OF WORD;
     aRandSubIndices : ARRAY[1..4] OF BYTE;
     

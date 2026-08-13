@@ -4,13 +4,6 @@
   <ProfileVersion>3.5.22.30</ProfileVersion>
   <MandatoryTypes>
     <ProjectInspectionDetail>
-      <TypeGuid>8753fe6f-4a22-4320-8103-e553c4fc8e04</TypeGuid>
-      <OwningPluginGuid>d4407f2e-9379-4c1b-8884-bba7a5e8185f</OwningPluginGuid>
-      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>Engine</OwningPluginName>
-      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
       <TypeGuid>225bfe47-7336-4dbc-9419-4105a7c831fa</TypeGuid>
       <OwningPluginGuid>2a785a6d-f546-47d1-9107-6bcaa0f232cf</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
@@ -18,10 +11,10 @@
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>cdadfc2b-8598-4621-ad56-5b1df7db910f</TypeGuid>
-      <OwningPluginGuid>2a785a6d-f546-47d1-9107-6bcaa0f232cf</OwningPluginGuid>
+      <TypeGuid>8753fe6f-4a22-4320-8103-e553c4fc8e04</TypeGuid>
+      <OwningPluginGuid>d4407f2e-9379-4c1b-8884-bba7a5e8185f</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>Device Object</OwningPluginName>
+      <OwningPluginName>Engine</OwningPluginName>
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
@@ -32,10 +25,31 @@
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
+      <TypeGuid>cdadfc2b-8598-4621-ad56-5b1df7db910f</TypeGuid>
+      <OwningPluginGuid>2a785a6d-f546-47d1-9107-6bcaa0f232cf</OwningPluginGuid>
+      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
+      <OwningPluginName>Device Object</OwningPluginName>
+      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
       <TypeGuid>639b491f-5557-464c-af91-1471bac9f549</TypeGuid>
       <OwningPluginGuid>1a4c1944-0e54-4497-8ebf-0a4d4f9d63e7</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
       <OwningPluginName>Application Object</OwningPluginName>
+      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>ae1de277-a207-4a28-9efb-456c06bd52f3</TypeGuid>
+      <OwningPluginGuid>b4f729fb-467c-4d38-8ceb-709fd262b4de</OwningPluginGuid>
+      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
+      <OwningPluginName>TaskConfig Object</OwningPluginName>
+      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>ffbfa93a-b94d-45fc-a329-229860183b1d</TypeGuid>
+      <OwningPluginGuid>30a290bb-01c9-43cf-8fd1-8c11177b74e1</OwningPluginGuid>
+      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
+      <OwningPluginName>GVL Object</OwningPluginName>
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
@@ -53,20 +67,6 @@
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>ae1de277-a207-4a28-9efb-456c06bd52f3</TypeGuid>
-      <OwningPluginGuid>b4f729fb-467c-4d38-8ceb-709fd262b4de</OwningPluginGuid>
-      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>TaskConfig Object</OwningPluginName>
-      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>98a2708a-9b18-4f31-82ed-a1465b24fa2d</TypeGuid>
-      <OwningPluginGuid>edb57405-2414-4d5a-b9fe-9258ad4eae0a</OwningPluginGuid>
-      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>Task Object</OwningPluginName>
-      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
       <TypeGuid>2db5746d-d284-4425-9f7f-2663a34b0ebc</TypeGuid>
       <OwningPluginGuid>cfa28293-cc74-40a7-bdfd-dd24c1faf5d9</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
@@ -74,10 +74,10 @@
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>ffbfa93a-b94d-45fc-a329-229860183b1d</TypeGuid>
-      <OwningPluginGuid>30a290bb-01c9-43cf-8fd1-8c11177b74e1</OwningPluginGuid>
+      <TypeGuid>98a2708a-9b18-4f31-82ed-a1465b24fa2d</TypeGuid>
+      <OwningPluginGuid>edb57405-2414-4d5a-b9fe-9258ad4eae0a</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>GVL Object</OwningPluginName>
+      <OwningPluginName>Task Object</OwningPluginName>
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
