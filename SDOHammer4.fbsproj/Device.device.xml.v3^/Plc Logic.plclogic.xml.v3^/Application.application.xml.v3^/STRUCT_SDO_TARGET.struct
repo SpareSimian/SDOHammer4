@@ -1,0 +1,13 @@
+(* METADATA
+{
+	"v3Meta": {
+		"objectGuid": "ceb10d94-7bed-4b0c-b682-9e363e13877e"
+	}
+}
+*)
+TYPE STRUCT_SDO_TARGET :
+STRUCT
+    wIndex      : WORD;
+    bySubIndex  : BYTE;
+END_STRUCT
+END_TYPE

@@ -1,0 +1,67 @@
+{
+	"references": {
+		"Standard": {
+			"$type": "Placeholder",
+			"placeholder": "Standard",
+			"defaultResolution": "Standard, * (System)",
+			"allowUnqualifiedAccess": true
+		}
+	},
+	"placeholderOverrides": {
+		"Standard": "Standard, 3.5.22.0 (System)",
+		"StringUtils": "StringUtils, 3.5.22.0 (System)"
+	},
+	"v3Meta": {
+		"objectGuid": "c4eb32e6-be13-4156-9f59-711f7913557f",
+		"objectTypeGuid": "adb5cb65-8e1d-4a00-b70a-375ea27582f3"
+	},
+	"libraryParameters": {},
+	"v3SystemLibraries": [
+		{
+			"namespace": "_3S_LICENSE",
+			"libraryReference": {
+				"$type": "Placeholder",
+				"placeholder": "3SLicense",
+				"defaultResolution": "3SLicense, 0.0.0.0 (CODESYS)",
+				"resolverGuid": "97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b",
+				"allowUnqualifiedAccess": true
+			}
+		},
+		{
+			"namespace": "BPLog",
+			"libraryReference": {
+				"$type": "Placeholder",
+				"placeholder": "BreakpointLogging",
+				"defaultResolution": "Breakpoint Logging Functions, * (3S - Smart Software Solutions GmbH)",
+				"allowUnqualifiedAccess": true
+			}
+		},
+		{
+			"namespace": "DED",
+			"libraryReference": {
+				"$type": "Placeholder",
+				"placeholder": "CAA Device Diagnosis",
+				"defaultResolution": "CAA Device Diagnosis, 3.5.22.0 (CAA Technical Workgroup)"
+			}
+		},
+		{
+			"namespace": "IoDrvEthercatLib",
+			"libraryReference": {
+				"$type": "Placeholder",
+				"placeholder": "IODrvEtherCAT",
+				"defaultResolution": "IoDrvEtherCAT, 4.1.0.0 (3S - Smart Software Solutions GmbH)",
+				"allowUnqualifiedAccess": true
+			}
+		},
+		{
+			"namespace": "IoStandard",
+			"libraryReference": {
+				"$type": "Placeholder",
+				"placeholder": "IoStandard",
+				"defaultResolution": "IoStandard, 3.5.22.0 (System)",
+				"allowUnqualifiedAccess": true,
+				"linkAllContent": true
+			}
+		}
+	]
+}

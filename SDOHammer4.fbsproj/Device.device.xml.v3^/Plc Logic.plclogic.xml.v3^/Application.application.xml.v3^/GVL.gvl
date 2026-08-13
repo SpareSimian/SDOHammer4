@@ -1,0 +1,22 @@
+(* METADATA
+{
+	"v3Meta": {
+		"objectGuid": "f98b240b-93d2-4c32-bd7d-817c2eb94fac"
+	}
+}
+*)
+{attribute 'qualified_only'}
+NAMESPACE GVL
+VAR_GLOBAL CONSTANT
+    // Hardcoded list derived from the manufacturer ESI file
+    MAX_VALID_SDOS : INT := 5;
+    aValidSDOs : ARRAY[1..MAX_VALID_SDOS] OF STRUCT_SDO_TARGET := [
+        (wIndex := 16#1000, bySubIndex := 16#00), // Device Type
+        (wIndex := 16#1018, bySubIndex := 16#01), // Vendor ID
+        (wIndex := 16#1018, bySubIndex := 16#02), // Product Code
+        (wIndex := 16#6040, bySubIndex := 16#00), // Control Word (if Drive)
+        (wIndex := 16#6041, bySubIndex := 16#00)  // Status Word
+    ];
+END_VAR
+
+END_NAMESPACE

@@ -1,0 +1,7 @@
+# Enforce native Windows CRLF line endings for all text source files
+*.st   text eol=crlf
+*.xml  text eol=crlf
+
+# Ensure system metadata files maintain CRLF if edited externally
+*.json text eol=crlf
+*.ini  text eol=crlf

@@ -1,0 +1,82 @@
+# ==========================================
+# CODESYS Git Exclusion Rules
+# ==========================================
+
+# --- Compile and Build Outputs ---
+# Exclude precompiled code, compiler cache, and target-specific binaries
+*.compiled-library-v3
+*.compiled-library
+*.compileinfo
+*compileinfo.txt
+*.opt
+*.o
+*.obj
+*.out
+*.precompileinfo
+*.precompilecache
+
+# --- Visualizations & Symbol Configs ---
+# Exclude auto-generated code behind visuals and symbols
+*.visu_symbols
+*.visu_xml
+*_visu.xml
+*.symbolconfig
+
+# --- Temporary, Backups & Lock Files ---
+# Exclude active session locks and automated backups
+*.~*
+*.tmp
+*.bak
+*.log
+~$*
+.apsession
+
+# --- System and User-Specific Files ---
+# Exclude files containing personal window layouts and local paths
+*.user
+*.opts
+*.layout
+*.suo
+
+# --- Project Archives ---
+# Exclude massive backup files meant only for manual distribution
+*.projectarchive
+
+# --- Windows & OS Artifacts ---
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- TortoiseGit Specifics ---
+.tgit/
+TortoiseGit.log
+
+# --- manually-generate temp files
+git-*
+
+# --- generated C++ headers --
+/codesys_types
+
+# --- new with FBS 1.0.0.0
+
+# --- CODESYS Project Caches & Backups ---
+*.autosave
+*.backup
+.fbsdata/
+.auxiliaries/
+
+# --- IDE Session / Lock Control ---
+# This file tracks individual CODESYS IDE instances and access locks
+.apsession
+
+# --- Compiler Artifacts & Logs ---
+# Exclude target-specific compilation details and online change information
+*.compileinfo
+*.bootinfo
+*.bootinfo_guids
+*.precompilecache
+
+# --- User & Local Environment Settings ---
+# Exclude window layouts, cursor placement, and simulation configs
+*.opt
+*.~u
