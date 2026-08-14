@@ -28,6 +28,7 @@ VAR
     // Performance Metrics
     aReadCounts     : ARRAY[1..4] OF UDINT;
     aErrorCounts    : ARRAY[1..4] OF UDINT;
+	aLastErrorCodes : ARRAY[1..4] OF ETC_CO_ERROR;
     aLastAbortCodes : ARRAY[1..4] OF DWORD;
     
     // Iterator loop index
@@ -44,28 +45,44 @@ END_VAR
 
 
 IF NOT bInitialized THEN
-    SlaveCount := 0;
+
+	// wait for all slaves to be identified and linked into a list
+	IF NOT EtherCAT_Master.xConfigFinished THEN
+	    SlaveCount := 0;
+		RETURN;
+	END_IF
     
     // Fetch the entry point of the linked list from the Master node
     // Replace 'EtherCAT_Master' with the exact name of your master node
-    pSlave := EtherCAT_Master.FirstSlave;
-    
-    // Loop through the hardware nodes sequentially until a null pointer or index 4 is hit
-    WHILE pSlave <> 0 AND SlaveCount < 4 DO
-        SlaveCount := SlaveCount + 1;
-        
-        // Capture the internal hardware address required by ETC_CO_SdoRead
-        aSlaveIds[SlaveCount] := pSlave^.PhysSlaveAddr; 
-        
-        // Advance seamlessly to the next slave object down the physical line
-        pSlave := pSlave^.NextInstance;
-    END_WHILE
-    
-    bInitialized := TRUE;
+	IF 0 = pSlave THEN
+		pSlave := EtherCAT_Master.FirstSlave;
+	END_IF
+
+	IF 0 = pSlave THEN
+		// end of list, we're ready
+		bInitialized := TRUE;
+		RETURN;
+	END_IF
+
+	// wait for addresses to be assigned
+	IF 0 = pSlave^.PhysSlaveAddr THEN
+		RETURN;
+	END_IF
+	
+	// got an address, advance to next one for next bus cycle
+	SlaveCount := SlaveCount + 1;
+	aSlaveIds[SlaveCount] := pSlave^.PhysSlaveAddr;
+	IF 4 = SlaveCount THEN
+		bInitialized := TRUE; // no more space, so start
+	ELSE
+		pSlave := pSlave^.NextInstance;
+		RETURN;
+	END_IF
+
 END_IF
 
 // Loop through and evaluate all 4 state machines independently in the same PLC cycle
-FOR i := 1 TO 4 DO
+FOR i := 1 TO SlaveCount DO
     
     CASE aStates[i] OF
         0: // GENERATE PARAMETERS & PREPARE
@@ -79,9 +96,14 @@ FOR i := 1 TO 4 DO
 			aRandIndices[i]    := GVL.aValidSDOs[udiTargetIndex].wIndex;
 			aRandSubIndices[i] := GVL.aValidSDOs[udiTargetIndex].bySubIndex;
 
-            // Reset the FB execute trigger
-            aSdoReaders[i](xExecute := FALSE);
-            aStates[i] := 1;
+			// filter undesired regions
+			IF 16#2402 <> aRandIndices[i] AND 0 <> aRandSubIndices[i] THEN
+ 
+				// Reset the FB execute trigger
+				aSdoReaders[i](xExecute := FALSE);
+				aStates[i] := 1;
+			
+			END_IF
 
         1: // TRIGGER & MONITOR READS IN PARALLEL
             aSdoReaders[i](
@@ -102,6 +124,7 @@ FOR i := 1 TO 4 DO
                 
             ELSIF aSdoReaders[i].xError THEN
                 aErrorCounts[i] := aErrorCounts[i] + 1;
+				aLastErrorCodes[i] := aSdoReaders[i].eError;
                 aLastAbortCodes[i] := aSdoReaders[i].udiSdoAbort;
                 aSdoReaders[i](xExecute := FALSE);
                 aStates[i] := 0; // Skip error and keep hammering
