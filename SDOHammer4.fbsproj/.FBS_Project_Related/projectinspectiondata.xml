@@ -25,13 +25,6 @@
       <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>cdadfc2b-8598-4621-ad56-5b1df7db910f</TypeGuid>
-      <OwningPluginGuid>2a785a6d-f546-47d1-9107-6bcaa0f232cf</OwningPluginGuid>
-      <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
-      <OwningPluginName>Device Object</OwningPluginName>
-      <OwningPackageID>00000000-0000-0000-0000-000000000000</OwningPackageID>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
       <TypeGuid>639b491f-5557-464c-af91-1471bac9f549</TypeGuid>
       <OwningPluginGuid>1a4c1944-0e54-4497-8ebf-0a4d4f9d63e7</OwningPluginGuid>
       <OwningPluginVersion>3.5.22.30</OwningPluginVersion>
@@ -117,6 +110,78 @@
   </MandatoryTypes>
   <OptionalPackages>
     <ProjectInspectionDetail>
+      <TypeGuid>61a44170-da69-49a8-99a4-c61280b4559c</TypeGuid>
+      <OwningPluginGuid>990d0709-19a7-44c8-9d41-74692074af99</OwningPluginGuid>
+      <OwningPluginVersion>5.0.0.0</OwningPluginVersion>
+      <OwningPackageID>4750c29d-1979-4741-9854-ca9c151d8ac2</OwningPackageID>
+      <OwningPackageVersion>5.0.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Base Libraries</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>00000000-2491-4e06-936a-813dcff6e91e</TypeGuid>
+      <OwningPluginGuid>814141f2-06e8-4013-ada4-42bacc77e168</OwningPluginGuid>
+      <OwningPluginVersion>4.8.0.0</OwningPluginVersion>
+      <OwningPackageID>fe851b02-f348-4b9c-ba56-79f30fc3af71</OwningPackageID>
+      <OwningPackageVersion>4.8.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Communication</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>5ff2c66c-ca58-4f67-9030-2450497b0602</TypeGuid>
+      <OwningPluginGuid>737c4a55-ca0b-4574-a89d-48e399a502c1</OwningPluginGuid>
+      <OwningPluginVersion>1.1.0.0</OwningPluginVersion>
+      <OwningPackageID>9c7fd7c3-98fd-403d-89a1-d904570a7198</OwningPackageID>
+      <OwningPackageVersion>1.1.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Library Dependency Inspection</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>41ae780e-129d-43e1-801c-2a9d8e603492</TypeGuid>
+      <OwningPluginGuid>5562ab60-0601-4c78-be07-41af98711d53</OwningPluginGuid>
+      <OwningPluginVersion>4.0.0.0</OwningPluginVersion>
+      <OwningPackageID>35e410e3-927e-4a4b-80ad-b9d38c989786</OwningPackageID>
+      <OwningPackageVersion>4.0.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Math Libraries</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>237b4c62-b131-4961-b2dc-5574cd16584d</TypeGuid>
+      <OwningPluginGuid>61ab8bb0-eb6d-4008-bde6-1bc5387e1654</OwningPluginGuid>
+      <OwningPluginVersion>4.7.0.0</OwningPluginVersion>
+      <OwningPackageID>a3b3e93f-7e07-435a-ab1d-9f4f8d472e57</OwningPackageID>
+      <OwningPackageVersion>4.7.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Recipes</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>9e06837b-9ba7-4554-9125-af696eabdb05</TypeGuid>
+      <OwningPluginGuid>7a807e44-1a24-49f1-9799-154dd253ac8e</OwningPluginGuid>
+      <OwningPluginVersion>4.2.0.0</OwningPluginVersion>
+      <OwningPackageID>bd131967-3a89-4e22-a845-79b0be0a3ce1</OwningPackageID>
+      <OwningPackageVersion>4.2.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Scripting</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>f8dd345d-8324-432d-9243-5e4506bd20d2</TypeGuid>
+      <OwningPluginGuid>8f05b65d-c5e1-4ab8-99d2-df0e9ea43f55</OwningPluginGuid>
+      <OwningPluginVersion>4.4.0.0</OwningPluginVersion>
+      <OwningPackageID>4e530ec4-2e4e-4639-b965-5b6267572c9b</OwningPackageID>
+      <OwningPackageVersion>4.4.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Trace</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>601ed0a6-4494-4633-8800-8a70f47362de</TypeGuid>
+      <OwningPluginGuid>b1caf0cb-cc18-4710-b4a3-b54edfc48e52</OwningPluginGuid>
+      <OwningPluginVersion>4.10.0.0</OwningPluginVersion>
+      <OwningPackageID>3328f7bd-a81c-4f41-8ee9-4d5a588a4882</OwningPackageID>
+      <OwningPackageVersion>4.10.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Visualization</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>e6139df3-05ef-461d-9ad9-7cfdac73f1b2</TypeGuid>
+      <OwningPluginGuid>26d33842-24f3-4c11-a54f-7238896ee99b</OwningPluginGuid>
+      <OwningPluginVersion>4.7.0.0</OwningPluginVersion>
+      <OwningPackageID>871b622c-b4bd-4ae3-b33c-d8f18aa656d7</OwningPackageID>
+      <OwningPackageVersion>4.7.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Visualization Support</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
       <TypeGuid>5a8291aa-370e-4dfb-8253-52c5a5ad5c65</TypeGuid>
       <OwningPluginGuid>efcd1ed8-8eb7-4d92-851d-45fe1a455b79</OwningPluginGuid>
       <OwningPluginVersion>4.5.0.0</OwningPluginVersion>
@@ -131,14 +196,6 @@
       <OwningPackageID>f078ec17-9021-4efb-85e0-e664479709f4</OwningPackageID>
       <OwningPackageVersion>1.39.0.0</OwningPackageVersion>
       <OwningPackageName>CODESYS Automation Server Connector</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>61a44170-da69-49a8-99a4-c61280b4559c</TypeGuid>
-      <OwningPluginGuid>990d0709-19a7-44c8-9d41-74692074af99</OwningPluginGuid>
-      <OwningPluginVersion>5.0.0.0</OwningPluginVersion>
-      <OwningPackageID>4750c29d-1979-4741-9854-ca9c151d8ac2</OwningPackageID>
-      <OwningPackageVersion>5.0.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Base Libraries</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
       <TypeGuid>53fb015d-9bdf-43e7-9091-a2358f79fc7e</TypeGuid>
@@ -195,14 +252,6 @@
       <OwningPackageID>cd9371df-4162-40ee-8835-3bbc38341166</OwningPackageID>
       <OwningPackageVersion>4.0.1.0</OwningPackageVersion>
       <OwningPackageName>CODESYS Code Generator TriCore</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>00000000-2491-4e06-936a-813dcff6e91e</TypeGuid>
-      <OwningPluginGuid>814141f2-06e8-4013-ada4-42bacc77e168</OwningPluginGuid>
-      <OwningPluginVersion>4.8.0.0</OwningPluginVersion>
-      <OwningPackageID>fe851b02-f348-4b9c-ba56-79f30fc3af71</OwningPackageID>
-      <OwningPackageVersion>4.8.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Communication</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
       <TypeGuid>b1bd1c7a-e66f-4ea9-ac5a-e9ffea3670b6</TypeGuid>
@@ -269,6 +318,14 @@
       <OwningPackageName>CODESYS EtherNet/IP</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
+      <TypeGuid>16ff82ad-2b73-4c8d-a7e5-e9d210af70cf</TypeGuid>
+      <OwningPluginGuid>9783e918-7383-429f-95b7-f5cce6f46866</OwningPluginGuid>
+      <OwningPluginVersion>1.7.0.0</OwningPluginVersion>
+      <OwningPackageID>dd6c2da4-2ed2-4076-9bf7-52394db68819</OwningPackageID>
+      <OwningPackageVersion>1.7.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Git</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
       <TypeGuid>370216ce-19fb-4f4e-986f-5c70001126dd</TypeGuid>
       <OwningPluginGuid>f6874726-e52b-43cd-aa84-bd093bfc111a</OwningPluginGuid>
       <OwningPluginVersion>4.4.0.0</OwningPluginVersion>
@@ -293,20 +350,26 @@
       <OwningPackageName>CODESYS LD/FBD</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>5ff2c66c-ca58-4f67-9030-2450497b0602</TypeGuid>
-      <OwningPluginGuid>737c4a55-ca0b-4574-a89d-48e399a502c1</OwningPluginGuid>
-      <OwningPluginVersion>1.1.0.0</OwningPluginVersion>
-      <OwningPackageID>9c7fd7c3-98fd-403d-89a1-d904570a7198</OwningPackageID>
-      <OwningPackageVersion>1.1.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Library Dependency Inspection</OwningPackageName>
+      <TypeGuid>ded69c0c-5148-4a2d-8e52-574a03ebc15f</TypeGuid>
+      <OwningPluginGuid>28dc0613-8ce7-4d1c-a6c9-cf1321e8445e</OwningPluginGuid>
+      <OwningPluginVersion>1.3.0.0</OwningPluginVersion>
+      <OwningPackageID>08fd7bae-c2b4-44a8-bef6-d56a3e2de966</OwningPackageID>
+      <OwningPackageVersion>1.3.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS License Provider</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>41ae780e-129d-43e1-801c-2a9d8e603492</TypeGuid>
-      <OwningPluginGuid>5562ab60-0601-4c78-be07-41af98711d53</OwningPluginGuid>
-      <OwningPluginVersion>4.0.0.0</OwningPluginVersion>
-      <OwningPackageID>35e410e3-927e-4a4b-80ad-b9d38c989786</OwningPackageID>
-      <OwningPackageVersion>4.0.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Math Libraries</OwningPackageName>
+      <TypeGuid>00000000-0000-0000-0000-000000000000</TypeGuid>
+      <OwningPluginGuid>00000000-0000-0000-0000-000000000000</OwningPluginGuid>
+      <OwningPackageID>9414c814-dc18-47cf-b950-239a65a0fe2e</OwningPackageID>
+      <OwningPackageVersion>1.8.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS License Provider Enabler</OwningPackageName>
+    </ProjectInspectionDetail>
+    <ProjectInspectionDetail>
+      <TypeGuid>00000000-0000-0000-0000-000000000000</TypeGuid>
+      <OwningPluginGuid>00000000-0000-0000-0000-000000000000</OwningPluginGuid>
+      <OwningPackageID>bd482a15-5b2c-4a4c-86da-68f47a9e5bd0</OwningPackageID>
+      <OwningPackageVersion>1.2.0.0</OwningPackageVersion>
+      <OwningPackageName>CODESYS Licensing Support</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
       <TypeGuid>0e809288-47ce-4de5-a1e4-852003a9cb7c</TypeGuid>
@@ -349,14 +412,6 @@
       <OwningPackageName>CODESYS PROFINET</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>237b4c62-b131-4961-b2dc-5574cd16584d</TypeGuid>
-      <OwningPluginGuid>61ab8bb0-eb6d-4008-bde6-1bc5387e1654</OwningPluginGuid>
-      <OwningPluginVersion>4.7.0.0</OwningPluginVersion>
-      <OwningPackageID>a3b3e93f-7e07-435a-ab1d-9f4f8d472e57</OwningPackageID>
-      <OwningPackageVersion>4.7.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Recipes</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
       <TypeGuid>9b02afe2-8120-4067-8d26-04a648a1e608</TypeGuid>
       <OwningPluginGuid>68d80244-7f4d-4c65-a4a9-0566531e6456</OwningPluginGuid>
       <OwningPluginVersion>4.3.0.0</OwningPluginVersion>
@@ -387,14 +442,6 @@
       <OwningPackageID>a1db90be-6ec2-46a3-9113-52bd89ac1371</OwningPackageID>
       <OwningPackageVersion>4.1.0.0</OwningPackageVersion>
       <OwningPackageName>CODESYS Safety Support</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>9e06837b-9ba7-4554-9125-af696eabdb05</TypeGuid>
-      <OwningPluginGuid>7a807e44-1a24-49f1-9799-154dd253ac8e</OwningPluginGuid>
-      <OwningPluginVersion>4.2.0.0</OwningPluginVersion>
-      <OwningPackageID>bd131967-3a89-4e22-a845-79b0be0a3ce1</OwningPackageID>
-      <OwningPackageVersion>4.2.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Scripting</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
       <TypeGuid>d30e5f8a-cacc-4c7a-a303-c0cafcddac0f</TypeGuid>
@@ -437,58 +484,12 @@
       <OwningPackageName>CODESYS Target Settings Export</OwningPackageName>
     </ProjectInspectionDetail>
     <ProjectInspectionDetail>
-      <TypeGuid>f8dd345d-8324-432d-9243-5e4506bd20d2</TypeGuid>
-      <OwningPluginGuid>8f05b65d-c5e1-4ab8-99d2-df0e9ea43f55</OwningPluginGuid>
-      <OwningPluginVersion>4.4.0.0</OwningPluginVersion>
-      <OwningPackageID>4e530ec4-2e4e-4639-b965-5b6267572c9b</OwningPackageID>
-      <OwningPackageVersion>4.4.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Trace</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
       <TypeGuid>3ad5e516-3892-4c78-8d6d-c5a6a9240859</TypeGuid>
       <OwningPluginGuid>9d5036b5-8e3a-4a13-b589-1809439cd484</OwningPluginGuid>
       <OwningPluginVersion>1.2.0.0</OwningPluginVersion>
       <OwningPackageID>55c98a23-1128-4d94-97c1-efc9658b47da</OwningPackageID>
       <OwningPackageVersion>1.2.0.0</OwningPackageVersion>
       <OwningPackageName>CODESYS Usage Analysis</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>601ed0a6-4494-4633-8800-8a70f47362de</TypeGuid>
-      <OwningPluginGuid>b1caf0cb-cc18-4710-b4a3-b54edfc48e52</OwningPluginGuid>
-      <OwningPluginVersion>4.10.0.0</OwningPluginVersion>
-      <OwningPackageID>3328f7bd-a81c-4f41-8ee9-4d5a588a4882</OwningPackageID>
-      <OwningPackageVersion>4.10.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Visualization</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>e6139df3-05ef-461d-9ad9-7cfdac73f1b2</TypeGuid>
-      <OwningPluginGuid>26d33842-24f3-4c11-a54f-7238896ee99b</OwningPluginGuid>
-      <OwningPluginVersion>4.7.0.0</OwningPluginVersion>
-      <OwningPackageID>871b622c-b4bd-4ae3-b33c-d8f18aa656d7</OwningPackageID>
-      <OwningPackageVersion>4.7.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Visualization Support</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>ded69c0c-5148-4a2d-8e52-574a03ebc15f</TypeGuid>
-      <OwningPluginGuid>28dc0613-8ce7-4d1c-a6c9-cf1321e8445e</OwningPluginGuid>
-      <OwningPluginVersion>1.3.0.0</OwningPluginVersion>
-      <OwningPackageID>08fd7bae-c2b4-44a8-bef6-d56a3e2de966</OwningPackageID>
-      <OwningPackageVersion>1.3.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS License Provider</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>00000000-0000-0000-0000-000000000000</TypeGuid>
-      <OwningPluginGuid>00000000-0000-0000-0000-000000000000</OwningPluginGuid>
-      <OwningPackageID>9414c814-dc18-47cf-b950-239a65a0fe2e</OwningPackageID>
-      <OwningPackageVersion>1.8.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS License Provider Enabler</OwningPackageName>
-    </ProjectInspectionDetail>
-    <ProjectInspectionDetail>
-      <TypeGuid>00000000-0000-0000-0000-000000000000</TypeGuid>
-      <OwningPluginGuid>00000000-0000-0000-0000-000000000000</OwningPluginGuid>
-      <OwningPackageID>bd482a15-5b2c-4a4c-86da-68f47a9e5bd0</OwningPackageID>
-      <OwningPackageVersion>1.2.0.0</OwningPackageVersion>
-      <OwningPackageName>CODESYS Licensing Support</OwningPackageName>
     </ProjectInspectionDetail>
   </OptionalPackages>
 </ProjectInspectionData>
