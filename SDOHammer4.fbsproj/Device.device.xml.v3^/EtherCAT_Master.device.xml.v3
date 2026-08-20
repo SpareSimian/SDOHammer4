@@ -371,7 +371,7 @@ __V3_CONTENT__
 									<Single Name="Default" Type="string">MasterCycleTime</Single>
 								</Single>
 								<Single Name="Identifier" Type="string">805326848</Single>
-								<Single Name="Value" Type="string">4000</Single>
+								<Single Name="Value" Type="string">500</Single>
 								<Single Name="Type" Type="string">DWORD</Single>
 								<Single Name="Default" Type="string">4000</Single>
 							</Single>

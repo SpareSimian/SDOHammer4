@@ -1,9 +1,21 @@
 {
 	"references": {
+		"CAA": {
+			"$type": "Placeholder",
+			"placeholder": "CAA Types",
+			"defaultResolution": "CAA Types Extern, * (CAA Technical Workgroup)",
+			"allowUnqualifiedAccess": true
+		},
 		"Standard": {
 			"$type": "Placeholder",
 			"placeholder": "Standard",
 			"defaultResolution": "Standard, * (System)",
+			"allowUnqualifiedAccess": true
+		},
+		"SysTimeCore": {
+			"$type": "Placeholder",
+			"placeholder": "SysTimeCore",
+			"defaultResolution": "SysTimeCore, * (System)",
 			"allowUnqualifiedAccess": true
 		}
 	},

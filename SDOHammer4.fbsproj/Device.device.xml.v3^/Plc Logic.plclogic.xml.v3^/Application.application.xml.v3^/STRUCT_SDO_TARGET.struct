@@ -9,5 +9,6 @@ TYPE STRUCT_SDO_TARGET :
 STRUCT
     wIndex      : WORD;
     bySubIndex  : BYTE;
+	szSize      : CAA.SIZE;
 END_STRUCT
 END_TYPE

@@ -21,7 +21,8 @@ VAR
     aDataBuffs      : ARRAY[1..4] OF ARRAY[0..255] OF BYTE;
     aRandIndices    : ARRAY[1..4] OF WORD;
     aRandSubIndices : ARRAY[1..4] OF BYTE;
-    
+    aRandSizes      : ARRAY[1..4] OF CAA.SIZE;
+	
     // Shared seed for the pseudo-random number generator
     dwRandSeed      : DWORD := 987654321;
     
@@ -30,7 +31,12 @@ VAR
     aErrorCounts    : ARRAY[1..4] OF UDINT;
 	aLastErrorCodes : ARRAY[1..4] OF ETC_CO_ERROR;
     aLastAbortCodes : ARRAY[1..4] OF DWORD;
-    
+    aReadStartTime  : ARRAY[1..4] OF SYSTIME;
+    aReadEndTime    : ARRAY[1..4] OF SYSTIME;
+    aElapsed        : ARRAY[1..4] OF ULINT;
+	aTotalElapsed   : ARRAY[1..4] OF ULINT;
+    aAverageTime    : ARRAY[1..4] OF REAL;
+
     // Iterator loop index
     i               : INT;
 	
@@ -40,6 +46,10 @@ VAR
 	udiTargetIndex  : UDINT;
     
     bInitialized    : BOOL := FALSE;
+	
+	lastCycleTime   : SYSTIME;
+	thisCycleTime   : SYSTIME;
+	cycleTime       : SYSTIME;
 	
 END_VAR
 
@@ -81,6 +91,10 @@ IF NOT bInitialized THEN
 
 END_IF
 
+SysTimeGetUs(thisCycleTime);
+cycleTime := thisCycleTime - lastCycleTime;
+lastCycleTime := thisCycleTime;
+
 // Loop through and evaluate all 4 state machines independently in the same PLC cycle
 FOR i := 1 TO SlaveCount DO
     
@@ -95,15 +109,12 @@ FOR i := 1 TO SlaveCount DO
 			// Pull valid paired parameters cleanly
 			aRandIndices[i]    := GVL.aValidSDOs[udiTargetIndex].wIndex;
 			aRandSubIndices[i] := GVL.aValidSDOs[udiTargetIndex].bySubIndex;
-
-			// filter undesired regions
-			IF 16#2402 <> aRandIndices[i] AND 0 <> aRandSubIndices[i] THEN
- 
-				// Reset the FB execute trigger
-				aSdoReaders[i](xExecute := FALSE);
-				aStates[i] := 1;
+			aRandSizes[i]      := GVL.aValidSDOs[udiTargetIndex].szSize;
 			
-			END_IF
+			// Reset the FB execute trigger
+			aSdoReaders[i](xExecute := FALSE);
+			SysTimeGetUs(aReadStartTime[i]);
+			aStates[i] := 1;
 
         1: // TRIGGER & MONITOR READS IN PARALLEL
             aSdoReaders[i](
@@ -113,16 +124,19 @@ FOR i := 1 TO SlaveCount DO
                 wIndex      := aRandIndices[i],
                 bySubindex  := aRandSubIndices[i],
                 pBuffer     := ADR(aDataBuffs[i]),
-                szSize     := SIZEOF(aDataBuffs[i]),
-                udiTimeOut  := 50 // Fast 50ms timeout
+                szSize      := aRandSizes[i],
+                udiTimeOut  := 10
             );
             
             IF aSdoReaders[i].xDone THEN
                 aReadCounts[i] := aReadCounts[i] + 1;
+				ComputeTime();
                 aSdoReaders[i](xExecute := FALSE);
                 aStates[i] := 0; // Instantly queue the next read
                 
             ELSIF aSdoReaders[i].xError THEN
+                aReadCounts[i] := aReadCounts[i] + 1;
+				ComputeTime();
                 aErrorCounts[i] := aErrorCounts[i] + 1;
 				aLastErrorCodes[i] := aSdoReaders[i].eError;
                 aLastAbortCodes[i] := aSdoReaders[i].udiSdoAbort;
